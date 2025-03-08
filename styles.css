@@ -1,3 +1,15 @@
 body {
-    background-color: #F2DEC4;
+    background-color: var(--highlight-color);
+    font-family: var(--primary-font)
+}
+
+:root {
+    --primary-color: #8C6F5E;
+    --secondary-color: #BF946F;
+    --highlight-color: #F2DEC4;
+    --neurtal-color: #40322D;
+    --text-color: #0a0a0a;
+    --blank: #f8f6f3;
+    --primary-font:"Cormorant Garamond", serif;
+    --secondary-font: "Quicksand", sans-serif;
 }
