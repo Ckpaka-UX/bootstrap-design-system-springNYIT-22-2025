@@ -4,208 +4,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Design System</title>
+  <title>Mistline Design System</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Quicksand:wght@300..700&family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-    <h1 class="emphasized" style="font-size: 2rem;">Mistline Design System</h1>
-    <h2>By Catherine Kpaka</h2>
-    <p>This component Design system is inspired by romantic landscapes and is based on Bootstrap 5 CSS.</p>
+  <div class="container py-5">
+    <header class="mb-5 text-center">
+      <h1 class="emphasized display-4">Mistline Design System</h1>
+      <p class="lead">A dreamy, romantic landscape-inspired component library built on Bootstrap 5</p>
+    </header>
 
-    <!-- 1. Typography -->
-    <div class="row">
-      <div class="col">
-        <h2>1. Typography</h2>
-        <hr>
+    <!-- Typography -->
+    <section class="mb-5">
+      <h2 class="mb-3">1. Typography</h2>
+      <div class="mb-4">
         <h1 class="emphasized">H1 Romantic Heading</h1>
         <h2>H2 Romantic Heading</h2>
         <h3>H3 Romantic Heading</h3>
         <h4>H4 Romantic Heading</h4>
         <h5>H5 Romantic Heading</h5>
         <h6>H6 Romantic Heading</h6>
-        <p>Paragraph text with <strong>bold</strong>, <em>italic</em>, <mark>highlight</mark>, <small>small text</small>, and <code>&lt;code&gt;</code> styles.</p>
-        <blockquote class="blockquote">Romanticism is the gentle kiss of the wilderness upon the soul.</blockquote>
+      </div>
+      <div>
+        <p>This is a standard paragraph with <strong>bold</strong>, <em>italic</em>, <mark>highlighted</mark>, <small>small text</small>, and <code>inline code</code>.</p>
+        <blockquote>"Romanticism is the gentle kiss of the wilderness upon the soul."</blockquote>
         <ul>
-          <li>Unordered list item</li>
+          <li>Unordered List Item</li>
         </ul>
         <ol>
-          <li>Ordered list item</li>
+          <li>Ordered List Item</li>
         </ol>
       </div>
-    </div>
+    </section>
 
-    <!-- 2. Colors & Theme -->
-    <div class="row">
-      <div class="col">
-        <h2>2. Colors & Theme</h2>
-        <hr>
-        <div class="p-3 mb-2 bg-primary text-white">Primary</div>
-        <div class="p-3 mb-2 bg-secondary text-white">Secondary</div>
-        <div class="p-3 mb-2 bg-success text-white">Success</div>
-        <div class="p-3 mb-2 bg-danger text-white">Danger</div>
-        <div class="p-3 mb-2 bg-warning text-dark">Warning</div>
-        <div class="p-3 mb-2 bg-info text-dark">Info</div>
-        <div class="p-3 mb-2 bg-light text-dark">Light</div>
-        <div class="p-3 mb-2 bg-dark text-white">Dark</div>
+    <!-- Colors -->
+    <section class="mb-5">
+      <h2 class="mb-3">2. Colors & Theme</h2>
+      <div class="d-flex flex-wrap gap-2">
+        <div class="p-3 bg-primary text-white">Primary</div>
+        <div class="p-3 bg-secondary text-white">Secondary</div>
+        <div class="p-3 bg-success text-white">Success</div>
+        <div class="p-3 bg-danger text-white">Danger</div>
+        <div class="p-3 bg-warning text-dark">Warning</div>
+        <div class="p-3 bg-info text-dark">Info</div>
+        <div class="p-3 bg-light text-dark border">Light</div>
+        <div class="p-3 bg-dark text-white">Dark</div>
       </div>
-    </div>
+    </section>
 
-    <!-- 3. Layout & Grid System -->
-    <div class="row">
-      <div class="col">
-        <h2>3. Layout & Grid</h2>
-        <hr>
-        <div class="row">
-          <div class="col-md-6 bg-light p-3">Column 1</div>
-          <div class="col-md-6 bg-secondary p-3 text-white">Column 2</div>
+    <!-- Layout -->
+    <section class="mb-5">
+      <h2 class="mb-3">3. Layout & Grid</h2>
+      <div class="row mb-3">
+        <div class="col-md-6 p-3 bg-light">Left Column</div>
+        <div class="col-md-6 p-3 bg-secondary text-white">Right Column</div>
+      </div>
+      <div class="d-flex gap-2">
+        <div class="p-2 bg-info text-white">Flex 1</div>
+        <div class="p-2 bg-success text-white">Flex 2</div>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="mb-5">
+      <h2 class="mb-3">4. Buttons</h2>
+      <button class="btn btn-primary mb-2">Primary</button>
+      <button class="btn btn-outline-secondary mb-2">Outline Secondary</button>
+      <button class="btn btn-danger mb-2" disabled>Disabled</button>
+      <button class="btn btn-warning btn-sm mb-2">Small Warning</button>
+    </section>
+
+    <!-- Forms -->
+    <section class="mb-5">
+      <h2 class="mb-3">5. Forms & Inputs</h2>
+      <input type="text" class="form-control mb-2" placeholder="Text input">
+      <select class="form-select mb-2">
+        <option selected>Choose one</option>
+        <option value="1">Option 1</option>
+      </select>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">Checkbox</label>
+      </div>
+      <textarea class="form-control mt-2" rows="3" placeholder="Textarea"></textarea>
+    </section>
+
+    <!-- Navigation -->
+    <section class="mb-5">
+      <h2 class="mb-3">6. Navigation</h2>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+        <a class="navbar-brand" href="#">Navbar</a>
+      </nav>
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active">Library</li>
+      </ul>
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+      </ul>
+    </section>
+
+    <!-- Cards & Alerts -->
+    <section class="mb-5">
+      <h2 class="mb-3">7. Cards, Alerts & Badges</h2>
+      <div class="card mb-3">
+        <div class="card-header">Header</div>
+        <div class="card-body">This is the card body with a romantic twist.</div>
+      </div>
+      <div class="alert alert-success">This is a success alert!</div>
+      <span class="badge bg-primary">New</span>
+    </section>
+
+    <!-- Modals -->
+    <section class="mb-5">
+      <h2 class="mb-3">8. Modals & Popups</h2>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch Modal
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              This is a modal body.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
-        <div class="d-flex justify-content-between mt-3">
-          <div class="p-2 bg-info text-white">Flex 1</div>
-          <div class="p-2 bg-success text-white">Flex 2</div>
+      </div>
+    </section>
+
+    <!-- Media & Icons -->
+    <section class="mb-5">
+      <h2 class="mb-3">9. Media & Icons</h2>
+      <img src="img/pexels-71366650-31272820.jpg" class="img-fluid rounded-circle mb-2" width="100">
+      <p><i class="bi bi-heart"></i> Bootstrap Icon Example</p>
+    </section>
+
+    <!-- Carousel -->
+    <section class="mb-5">
+      <h2 class="mb-3">10. Carousel</h2>
+      <div id="carouselExample" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/pexels-71366650-31272820.jpg" class="d-block w-100 rounded">
+          </div>
+          <div class="carousel-item">
+            <img src="img/pexels-mark-neal-201020-3413358.jpg" class="d-block w-100 rounded">
+          </div>
+          <div class="carousel-item">
+            <img src="img/pexels-muffin-2468773.jpg" class="d-block w-100 rounded">
+          </div>
         </div>
-      </div>
-    </div>
-
-    <!-- 4. Buttons -->
-    <div class="row">
-      <div class="col">
-        <h2>4. Buttons</h2>
-        <hr>
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn btn-outline-secondary">Outline Secondary</button>
-        <button class="btn btn-danger" disabled>Disabled</button>
-        <button class="btn btn-warning btn-sm">Small Warning</button>
-      </div>
-    </div>
-
-    <!-- 5. Forms & Inputs -->
-    <div class="row">
-      <div class="col">
-        <h2>5. Forms & Inputs</h2>
-        <hr>
-        <input type="text" class="form-control mb-2" placeholder="Text input">
-        <select class="form-select mb-2">
-          <option selected>Choose one</option>
-          <option value="1">Option 1</option>
-        </select>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">Checkbox</label>
-        </div>
-        <textarea class="form-control mt-2" rows="3" placeholder="Textarea"></textarea>
-      </div>
-    </div>
-
-    <!-- 6. Navigation -->
-    <div class="row">
-      <div class="col">
-        <h2>6. Navigation</h2>
-        <hr>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-        </nav>
-        <ul class="breadcrumb mt-2">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active">Library</li>
-        </ul>
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- 7. Cards, Alerts & Badges -->
-    <div class="row">
-      <div class="col">
-        <h2>7. Cards, Alerts & Badges</h2>
-        <hr>
-        <div class="card mb-2">
-          <div class="card-header">Header</div>
-          <div class="card-body">This is the card body.</div>
-        </div>
-        <div class="alert alert-success">This is a success alert!</div>
-        <span class="badge bg-primary">New</span>
-      </div>
-    </div>
-
-    <!-- 8. Modals & Popups -->
-    <div class="row">
-      <div class="col">
-        <h2>8. Modals & Popups</h2>
-        <hr>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Launch Modal
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <div class="modal fade" id="exampleModal" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-body">
-                This is a modal body.
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
-
-    <!-- 9. Media & Icons -->
-    <div class="row">
-      <div class="col">
-        <h2>9. Media & Icons</h2>
-        <hr>
-        <img src="img/pexels-71366650-31272820.jpg" class="img-fluid rounded-circle" width="100">
-        <p><i class="bi bi-heart"></i> Bootstrap Icon Example</p>
-      </div>
-    </div>
-
-    <!-- 10. Carousel -->
-    <div class="row">
-      <div class="col">
-        <h2>10. Carousel</h2>
-        <hr>
-        <div id="carouselExample" class="carousel slide carousel-fade">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/pexels-71366650-31272820.jpg" class="d-block w-100 rounded">
-            </div>
-            <div class="carousel-item">
-              <img src="img/pexels-mark-neal-201020-3413358.jpg" class="d-block w-100 rounded">
-            </div>
-            <div class="carousel-item">
-              <img src="img/pexels-muffin-2468773.jpg" class="d-block w-100 rounded">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 
