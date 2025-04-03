@@ -1,4 +1,8 @@
-:root {
+html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
     --primary-color: #8C6F5E;
     --secondary-color: #CFA58D;
     --highlight-color: #F2E8D5;
@@ -74,4 +78,41 @@
     filter: brightness(95%) contrast(95%);
     transition: all 0.8s ease-in-out;
     border-radius: 1rem;
+  }
+
+  .hero {
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    position: relative;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  section {
+    scroll-margin-top: 100px;
+  }
+
+  footer {
+    background-color: var(--dreamy-mist);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 0.9rem;
   }
