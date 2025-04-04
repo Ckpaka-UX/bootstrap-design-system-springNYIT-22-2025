@@ -1,11 +1,21 @@
-body {
-    background-color: #F2E8D5;
-    font-family: 'Cormorant Garamond', serif;
-    color: #2E2E2E;
+:root {
+    --primary-color: #8C6F5E;
+    --secondary-color: #CFA58D;
+    --highlight-color: #F2E8D5;
+    --neutral-color: #40322D;
+    --text-color: #2E2E2E;
+    --blank: #fdfcf9;
+    --primary-font: 'Cormorant Garamond', serif;
+    --secondary-font: 'Quicksand', sans-serif;
   }
   
-  .emphasized {
-    font-weight: 700;
+  body {
+    background-color: var(--highlight-color);
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   .hero {
@@ -20,37 +30,74 @@ body {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0,0,0,0.4);
   }
   .hero-content {
     position: relative;
     z-index: 1;
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary-font);
+    font-weight: 700;
+  }
+  p, a, li, blockquote {
+    font-family: var(--secondary-font);
+  }
+  
   blockquote {
     font-style: italic;
-    border-left: 4px solid #CFA58D;
+    border-left: 4px solid var(--secondary-color);
     padding-left: 1rem;
-    color: #40322D;
+    color: var(--neutral-color);
     margin: 1.5rem 0;
   }
+  
   .btn {
     border-radius: 2rem;
     padding: 0.6rem 1.4rem;
-    text-transform: none;
-    background-color: #8C6F5E;
-    border: none;
+    background-color: var(--primary-color);
     color: white;
+    text-transform: none;
+    border: none;
   }
   .btn:hover {
-    background-color: #CFA58D;
+    background-color: var(--secondary-color);
     color: white;
   }
+  
   .card {
     border-radius: 1rem;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
     margin-top: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
+  /* Carousel */
+  .carousel-inner img {
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+  
+  /* Badges */
+  .badge {
+    font-size: 0.9rem;
+    padding: 0.5em 0.75em;
+    border-radius: 1rem;
+  }
+  
+  /* Breadcrumb + Pagination spacing */
+  .breadcrumb,
+  .pagination {
+    margin-bottom: 1rem;
+  }
+  
+  /* Tooltip and popover */
+  [data-bs-toggle="tooltip"],
+  [data-bs-toggle="popover"] {
+    cursor: pointer;
+  }
+  
+  /* Dark mode support */
   .dark-mode {
     background-color: #2c2c2c;
     color: #f8f8f8;
@@ -61,4 +108,3 @@ body {
     background-color: #1e1e1e !important;
     color: #f8f8f8;
   }
-  
